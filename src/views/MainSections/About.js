@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import picture from './../images/calvin_hex_centered.png';
+import picture from './../../images/calvin_hex_centered.png';
 import anime from 'animejs/lib/anime.es.js';
 
 function About() {
@@ -29,8 +29,8 @@ function About() {
       for (let slide of slides) {
         anime({
           targets: slide,
-          easing: 'linear',
-          duration: 1000,
+          easing: 'easeInOutQuad',
+          duration: 2000,
           width: 140 + "%",
           // translateX: '-35deg',
         })

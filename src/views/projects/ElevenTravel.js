@@ -1,8 +1,8 @@
-import picture from './../images/calvin.jpeg';
+import picture from './../../images/calvin.jpeg';
 
-function Projects() {
+function ElevenTravel() {
   return (
-    <div id='projects' className="sub_section projects">
+    <div id='ElevenTravel' className="sub_section projects">
       <div className='title'>
         Projects
       </div>
@@ -78,4 +78,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ElevenTravel;

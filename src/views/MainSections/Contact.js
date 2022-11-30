@@ -1,4 +1,4 @@
-import picture from './../images/calvin.jpeg';
+import picture from './../../images/calvin.jpeg';
 
 function Contact() {
   return (

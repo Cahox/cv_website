@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import la from "../js/letterAnimator"
-import PB from "../js/particlesBackground";
+import la from "../../js/letterAnimator"
+import PB from "../../js/particlesBackground";
 
 function Head() {
   useEffect(() => {
