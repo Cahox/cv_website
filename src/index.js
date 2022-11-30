@@ -9,6 +9,7 @@ import './App.scss';
 import Head from './views/Head';
 import About from './views/About';
 import Projects from './views/Projects';
+import Contact from './views/Contact';
 import Footer from './views/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
     <Head />
     <About />
     <Projects />
+    <Contact />
     <Footer />
   </React.StrictMode>
 );

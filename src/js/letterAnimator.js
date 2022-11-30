@@ -18,7 +18,7 @@ function animateLetters(element_ids) {
             translateY: [0, -100],
             opacity: [1, 0],
             easing: "easeInExpo",
-            color: '#c10000',
+            color: '#5f4fee',
             duration: 2500,
             delay: (el, i) => 300 + 40 * i
         })

@@ -1,6 +1,6 @@
 import picture from './../images/calvin.jpeg';
 
-function Projects() {
+function Contact() {
   return (
     <div id='projects' className="sub_section projects">
       <div className='title'>
@@ -78,4 +78,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Contact;

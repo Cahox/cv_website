@@ -24,11 +24,26 @@ function About() {
         })
       }
 
+      let slides = document.getElementsByClassName('slide')
+
+      for (let slide of slides) {
+        anime({
+          targets: slide,
+          easing: 'linear',
+          duration: 1000,
+          width: 140 + "%",
+          // translateX: '-35deg',
+        })
+      }
     }
   }
 
   return (
     <div id="about" className="sub_section about">
+      <div className='slide_bar left'></div>
+      <div className='slide_bar right'></div>
+      <div className='slide left'></div>
+      <div className='slide right'></div>
       <div className='title'>
         About me
       </div>

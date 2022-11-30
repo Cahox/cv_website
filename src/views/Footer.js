@@ -1,5 +1,3 @@
-import picture from './../images/calvin.jpeg';
-
 function About() {
     return (
         <div id='footer' className="footer">
