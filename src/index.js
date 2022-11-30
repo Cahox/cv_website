@@ -4,16 +4,20 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 //css
 import './index.css';
-import './App.css';
+import './App.scss';
 //views
 import Head from './views/Head';
 import About from './views/About';
+import Projects from './views/Projects';
+import Footer from './views/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Head />
     <About />
+    <Projects />
+    <Footer />
   </React.StrictMode>
 );
 
