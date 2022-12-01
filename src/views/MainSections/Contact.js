@@ -16,29 +16,22 @@ function Contact() {
   let mailerSend = async function (e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_e6r04g6', 'template_dwkelvo', e.target, 'user_U1LIfGY2CSOIJVuKUoHag')
-      .then((result) => {
-          console.log(result.text);
-            responseBlock.innerHTML = 'Email sent!'
-      }, (error) => {
-          console.log(error.text);
-            responseBlock.innerHTML = 'An error has occured!'
-      });
+    let form = e.target
 
-    // try {
-    //   const message = await client.sendAsync({
-    //     text: 'i hope this works',
-    //     from: 'calvinhong123@gmail.com',
-    //     to: '<calvinhongcv@gmail.com>',
-    //     subject: 'testing emailjs',
-    //   });
-    //   console.log(message);
-    //   responseBlock.innerHTML('Email sent!')
-    // } catch (err) {
-    //   console.error(err);
-    //   responseBlock.innerHTML('An error has occured!')
-    // }
-}
+    if(form && form.name.value && form.email.value && form.message.value){
+      emailjs.sendForm('service_e6r04g6', 'template_dwkelvo', e.target, 'user_U1LIfGY2CSOIJVuKUoHag')
+        .then((result) => {
+          console.log(result.text);
+          e.target.reset()
+          responseBlock.innerHTML = 'Email sent!'
+        }, (error) => {
+          console.log(error.text);
+          responseBlock.innerHTML = 'An error has occured!'
+        });
+    }else{
+      responseBlock.innerHTML = 'Please fully fill in the form!'
+    }
+  }
 
   return (
     <div id='contact' className="sub_section contact">
@@ -65,13 +58,13 @@ function Contact() {
         <form id="mailer" className="mailer_form" onSubmit={mailerSend}>
           <div className='mailer_title'>Send me a message!</div>
           <div>
-            <input id="name" name="name" className="text_box" placeholder="Your Name" type="text" />
+            <input id="name" name="name" className="text_box" placeholder="Your Name" type="text" required/>
           </div>
           <div>
-            <input id="email" name="email" className="text_box" placeholder="Your Email" type="email" />
+            <input id="email" name="email" className="text_box" placeholder="Your Email" type="email" required/>
           </div>
           <div>
-            <textarea id="message" name="message" className="text_area" type="text" cols="40" placeholder="Message" />
+            <textarea id="message" name="message" className="text_area" type="text" cols="40" placeholder="Message" required/>
           </div>
 
           <div className="mailer_bottom">

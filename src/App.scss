@@ -328,6 +328,7 @@ body {
                 display: flex;
                 width: 100%;
                 text-decoration: none;
+                box-shadow: 0 0.5em 1em $light;
 
                 .contact_bar_icon {
                     background: white;
@@ -357,8 +358,9 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding-top: 0.5em;
+                padding: 0.5em 0;
                 font-size: 2.5em;
+                border-bottom: 2px $bg-light solid;
             }
 
             .text_box {
@@ -422,7 +424,7 @@ body {
                     border: 3px $light solid;
                     padding: 1em 3em;
                     transition-duration: 0.5s;
-                    box-shadow: 0 0.5rem 1rem $bg-dark;
+                    box-shadow: 0 0.25rem 0.5rem $bg-dark;
                     cursor: pointer;
                 }
 
