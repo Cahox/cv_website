@@ -70,9 +70,9 @@ const PB = () => {
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 750,
                         },
-                        value: 50,
+                        value: 45,
                     },
                     opacity: {
                         value: 0.5,

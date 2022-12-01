@@ -1,5 +1,6 @@
 import picture from './../../images/calvin.jpeg';
 import elevenTravel from './../../images/eleven-travel/eleven-travel.jpg';
+import strapi from './../../images/strapi/strapi.png';
 
 function Projects() {
   return (
@@ -16,64 +17,28 @@ function Projects() {
               <span>Eleven Travel</span>
             </div>
           </a>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
+          
+          {/* Strapi */}
+          <a href='/projects/strapi' className='card'>
+            <img src={strapi} className="card_picture" alt="project" />
             <div className='project_title'>
-              <span>project title</span>
+              <span>Strapi</span>
             </div>
-          </div>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
-            <div className='project_title'>
-              <span>project title</span>
-            </div>
-          </div>
-        </div>
-        <div className='cards_row'>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
-            <div className='project_title'>
-              <span>project title</span>
-            </div>
-          </div>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
-            <div className='project_title'>
-              <span>project title</span>
-            </div>
-          </div>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
-            <div className='project_title'>
-              <span>project title</span>
-            </div>
-          </div>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
-            <div className='project_title'>
-              <span>project title</span>
-            </div>
-          </div>
-        </div>
-        <div className='cards_row'>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
-            <div className='project_title'>
-              <span>project title</span>
-            </div>
-          </div>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
-            <div className='project_title'>
-              <span>project title</span>
-            </div>
-          </div>
-          <div className='card'>
-            <img src={picture} className="card_picture" alt="project" />
-            <div className='project_title'>
-              <span>project title</span>
-            </div>
-          </div>
+          </a>
+          
+          {/*
+          moonly ticket support
+          jobapp
+          pocketduck
+          roguelike
+          simac
+          travelapp
+          thisproject
+          blockchain 
+          friettent system
+          kinetic analysis
+          */}
+
         </div>
       </div>
     </div>
