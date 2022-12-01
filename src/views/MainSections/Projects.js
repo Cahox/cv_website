@@ -11,10 +11,12 @@ import catering_ai from './../../images/strapi/strapi.png';
 import stresspatchy from './../../images/strapi/strapi.png';
 import nft from './../../images/strapi/strapi.png';
 import cv from './../../images/strapi/strapi.png';
+import Roller from './../../js/roller.js'
 
 function Projects() {
   return (
     <div id='projects' className="sub_section projects">
+      <Roller></Roller>
       <div className='title'>
         Projects
       </div>
