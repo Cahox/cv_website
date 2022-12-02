@@ -2,16 +2,16 @@ import { useEffect } from 'react';
 import la from "../../js/letterAnimator"
 import PB from "../../js/particlesBackground";
 
-function scrollTo(id){
-  document.getElementById(id).scrollIntoView();
+function scrollTo (id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'center' })
 }
 
 function Head() {
   useEffect(() => {
     la(['cv', 'portfolio']);
-    document.getElementById('to_about').addEventListener('click', scrollTo('about'))
-    document.getElementById('to_projects').addEventListener('click', scrollTo('projects'))
-    document.getElementById('to_contact').addEventListener('click', scrollTo('contact'))
+    document.getElementById('to_about').addEventListener('click', () => {scrollTo('about')})
+    document.getElementById('to_projects').addEventListener('click', () => {scrollTo('projects')})
+    document.getElementById('to_contact').addEventListener('click', () => {scrollTo('contact')})
   });
   return (
       <div id="head" className="head">

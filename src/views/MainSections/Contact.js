@@ -4,22 +4,12 @@ import phone from './../../images/phone-call.png';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-  // const client = new SMTPClient({
-  //   user: 'calvinhong123@gmail.com',
-  //   password: 'IQTwCUZn6HJ0adkK',
-  //   host: 'smtp-relay.sendinblue.com',
-  //   port: 587,
-  //   ssl: true,
-  // });
   let responseBlock = document.getElementById('response_msg')
-
   let mailerSend = async function (e) {
     e.preventDefault();
-
     let form = e.target
-
-    if(form && form.name.value && form.email.value && form.message.value){
-      emailjs.sendForm('service_e6r04g6', 'template_dwkelvo', e.target, 'user_U1LIfGY2CSOIJVuKUoHag')
+    if (form && form.name.value && form.email.value && form.message.value) {
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
           console.log(result.text);
           e.target.reset()
@@ -28,7 +18,7 @@ function Contact() {
           console.log(error.text);
           responseBlock.innerHTML = 'An error has occured!'
         });
-    }else{
+    } else {
       responseBlock.innerHTML = 'Please fully fill in the form!'
     }
   }
@@ -58,13 +48,13 @@ function Contact() {
         <form id="mailer" className="mailer_form" onSubmit={mailerSend}>
           <div className='mailer_title'>Send me a message!</div>
           <div>
-            <input id="name" name="name" className="text_box" placeholder="Your Name" type="text" required/>
+            <input id="name" name="name" className="text_box" placeholder="Your Name" type="text" required />
           </div>
           <div>
-            <input id="email" name="email" className="text_box" placeholder="Your Email" type="email" required/>
+            <input id="email" name="email" className="text_box" placeholder="Your Email" type="email" required />
           </div>
           <div>
-            <textarea id="message" name="message" className="text_area" type="text" cols="40" placeholder="Message" required/>
+            <textarea id="message" name="message" className="text_area" type="text" cols="40" placeholder="Message" required />
           </div>
 
           <div className="mailer_bottom">

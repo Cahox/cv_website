@@ -1,14 +1,20 @@
-$highlight: #c10000;
-
 $bg-light: #393958;
 $bg: #32324e;
 $bg-dark: #191938;
-
 $light: #6a6aa0;
 $dark: #000022;
 
+$normal: 1900px;
+$medium: 1650px;
+$small: 1380px;
+$tiny: 844px;
+$phone: 430px;
+
+
+
 body {
     color: white;
+    overflow-x: hidden !important;
 }
 
 ::-webkit-scrollbar {
@@ -63,6 +69,12 @@ body {
     box-shadow: 0 0.25rem 0.75rem $dark;
 }
 
+@media (max-width: $tiny) {
+    .button {
+        font-size: 1.25em;
+    }
+}
+
 .head {
     height: 100vh;
     width: 100vw;
@@ -90,6 +102,11 @@ body {
                 white-space: nowrap;
             }
 
+            @media (max-width: $tiny) {
+                .animation_item {
+                    font-size: 2.5em;
+                }
+            }
         }
 
         .head_name {
@@ -106,10 +123,17 @@ body {
         .head_navigation {
             display: flex;
         }
+
+        @media (max-width: $small) {
+            .head_navigation {
+                flex-direction: column;
+            }
+        }
     }
 }
 
 .sub_section {
+    overflow: hidden !important;
     min-height: 100vh;
     padding-top: 7.5vh;
 
@@ -119,13 +143,24 @@ body {
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width: $tiny) {
+        .title {
+            font-size: 2em;
+        }
+    }
+}
+
+@media (max-width: $tiny) {
+    .title {
+        font-size: 2em;
+    }
 }
 
 .about {
     position: relative;
     background: linear-gradient(0deg, $bg-light 65%, rgba(0, 0, 0, 0) 100%);
     z-index: 10;
-
 
     .slide {
         position: absolute;
@@ -155,6 +190,42 @@ body {
 
     }
 
+    @media (max-width: $normal) {
+        .right {
+            transform: translateX(100vw) translateY(45vh) rotate(-35deg);
+        }
+    }
+
+    @media (max-width: $small) {
+        .left {
+            transform: translateX(-70vw) translateY(90vh) rotate(25deg);
+        }
+
+        .right {
+            transform: translateX(115vw) translateY(85vh) rotate(-35deg);
+        }
+    }
+
+    @media (max-width: $tiny) {
+        .left {
+            transform: translateX(-100vw) translateY(70vh) rotate(25deg);
+        }
+
+        .right {
+            transform: translateX(135vw) translateY(65vh) rotate(-35deg);
+        }
+    }
+
+    @media (max-width: $phone) {
+        .left {
+            transform: translateX(-100vw) translateY(60vh) rotate(25deg);
+        }
+
+        .right {
+            transform: translateX(135vw) translateY(65vh) rotate(-35deg);
+        }
+    }
+
     .information {
         z-index: 10;
         position: relative;
@@ -182,6 +253,30 @@ body {
                 font-size: 1.25em;
                 text-align: center;
                 filter: drop-shadow(2.5em 2.5em 1em #000022);
+            }
+
+            @media (max-width: $small) {
+                .picture {
+                    width: 55vw;
+                    max-width: 20em;
+                    transition-duration: 0.75s;
+                }
+
+                .description {
+                    max-width: 60vw;
+                }
+            }
+
+            @media (max-width: $tiny) {
+
+                .picture {
+                    width: 65vw;
+                    transition-duration: 0.75s;
+                }
+
+                .description {
+                    max-width: 90vw;
+                }
             }
         }
 
@@ -213,6 +308,30 @@ body {
                     width: 0;
                 }
             }
+        }
+
+        @media (max-width: $small) {
+            .info_left {
+                max-width: 80vw;
+            }
+
+            .info_right {
+                max-width: 90vw;
+            }
+        }
+
+        @media (max-width: $tiny) {
+            .info_right {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: $small) {
+        .information {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 5em;
         }
     }
 }
@@ -346,6 +465,48 @@ body {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                 }
+
+
+                @media (max-width: $medium) {
+                    .contact_bar_title {
+                        font-size: 1.25em;
+                    }
+
+                    .contact_bar_icon {
+                        width: 2em;
+                        height: 2em;
+                    }
+                }
+
+                @media (max-width: $small) {
+                    .contact_bar_title {
+                        justify-content: center;
+                        width: 100%;
+                        font-size: 1.5em;
+                    }
+
+                    .contact_bar_icon {
+                        width: 1.5em;
+                        height: 1.5em;
+                    }
+                }
+
+                @media (max-width: $tiny) {
+                    .contact_bar_title {
+                        font-size: 1em;
+                    }
+                }
+
+                @media (max-width: $phone) {
+                    .contact_bar_title {
+                        font-size: 1em;
+                    }
+
+                    .contact_bar_icon {
+                        width: 1.25em;
+                        height: 1.25em;
+                    }
+                }
             }
         }
 
@@ -354,7 +515,7 @@ body {
             width: 25vw;
             padding: 1em 2em 1em 2em;
 
-            .mailer_title{
+            .mailer_title {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -440,6 +601,50 @@ body {
                     box-shadow: 0 0.25rem 0.75rem $dark;
                 }
             }
+
+
+
+            @media (max-width: $medium) {
+                .mailer_title {
+                    font-size: 1.5em;
+                }
+
+                .text_box {
+                    font-size: 1.25em;
+                }
+
+                .text_area {
+                    font-size: 1.25em;
+                }
+            }
+        }
+
+        @media (max-width: $small) {
+            .mailer_form {
+                width: 60vw;
+            }
+
+            .contact_bars {
+                width: 60vw;
+            }
+        }
+
+        @media (max-width: $phone) {
+            .contact_bars {
+                gap: 2.5em;
+                margin-bottom: 2.5em;
+            }
+        }
+    }
+    
+    @media (max-width: $small) {
+        .contact_container {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: $phone) {
+        .contact_container {
+            padding-bottom: 5em;
         }
     }
 }
