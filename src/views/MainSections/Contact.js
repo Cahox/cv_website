@@ -1,10 +1,15 @@
+import { useEffect } from 'react';
 import email from './../../images/email.png';
 import linkedin from './../../images/linkedin.png';
 import phone from './../../images/phone-call.png';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-  let responseBlock = document.getElementById('response_msg')
+  let responseBlock
+  useEffect(() => {
+    responseBlock = document.getElementById('response_msg')
+  });
+  
   let mailerSend = async function (e) {
     e.preventDefault();
     let form = e.target
@@ -22,6 +27,7 @@ function Contact() {
       responseBlock.innerHTML = 'Please fully fill in the form!'
     }
   }
+
 
   return (
     <div id='contact' className="sub_section contact">

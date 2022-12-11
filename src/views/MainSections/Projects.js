@@ -23,19 +23,19 @@ function Projects() {
       <div className='project_cards'>
         <div className='cards_row'>
           {/* ElevenTravel */}
-          <a href='/projects/eleven-travel' className='card'>
+          {/* <a href='/projects/eleven-travel' className='card'>
             <img src={elevenTravel} className="card_picture" alt="project" />
             <div className='project_title'>
               <span>Eleven Travel</span>
             </div>
-          </a>
+          </a> */}
           {/* Strapi */}
-          <a href='/projects/strapi' className='card'>
+          {/* <a href='/projects/strapi' className='card'>
             <img src={strapi} className="card_picture" alt="project" />
             <div className='project_title'>
               <span>Strapi</span>
             </div>
-          </a>
+          </a> */}
           {/* Support System */}
           <a href='/projects/support-system' className='card'>
             <img src={support} className="card_picture" alt="project" />
