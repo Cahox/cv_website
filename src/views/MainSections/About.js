@@ -57,7 +57,7 @@ function About() {
         <div className='info_right'>
           <div className='skill_bar'>
             <div className='skill_title'>HTML</div>
-            <div className='skill_progress' data-progress="95"></div>
+            <div className='skill_progress' data-progress="90"></div>
           </div>
           <div className='skill_bar'>
             <div className='skill_title'>CSS</div>
@@ -69,7 +69,7 @@ function About() {
           </div>
           <div className='skill_bar'>
             <div className='skill_title'>Jquery</div>
-            <div className='skill_progress' data-progress="95"></div>
+            <div className='skill_progress' data-progress="90"></div>
           </div>
           <div className='skill_bar'>
             <div className='skill_title'>React</div>
@@ -81,11 +81,11 @@ function About() {
           </div>
           <div className='skill_bar'>
             <div className='skill_title'>Laravel</div>
-            <div className='skill_progress' data-progress="95"></div>
+            <div className='skill_progress' data-progress="90"></div>
           </div>
           <div className='skill_bar'>
             <div className='skill_title'>SQL</div>
-            <div className='skill_progress' data-progress="70"></div>
+            <div className='skill_progress' data-progress="75"></div>
           </div>
           <div className='skill_bar'>
             <div className='skill_title'>Python</div>

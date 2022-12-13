@@ -8,7 +8,7 @@ const PB = () => {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log('particle container', container);
+        await container;
     }, []);
 
     return (
@@ -24,7 +24,7 @@ const PB = () => {
                     },
                 },
                 fullScreen: { enable: false },
-                fpsLimit: 60,
+                fpsLimit: 30,
                 interactivity: {
                     events: {
                         onClick: {
@@ -39,7 +39,7 @@ const PB = () => {
                     },
                     modes: {
                         connect: {
-                            distance: 300,
+                            distance: 250,
                             radius: 100,
                         },
                     },
@@ -72,7 +72,7 @@ const PB = () => {
                             enable: true,
                             area: 750,
                         },
-                        value: 45,
+                        value: 35,
                     },
                     opacity: {
                         value: 0.5,
@@ -87,7 +87,6 @@ const PB = () => {
                         value: { min: 1, max: 2 },
                     },
                 },
-                detectRetina: true,
             }}
         />
     );

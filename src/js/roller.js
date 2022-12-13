@@ -31,8 +31,6 @@ function pop(ball){
 }
 
 function initRoller(){
-    console.log('resize')
-
     let track = document.getElementById('track')
     let rollerBase = document.getElementById('rollerBase')
     let withTrack = window.innerWidth

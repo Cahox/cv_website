@@ -11,6 +11,7 @@ import Layout from './views/Layout';
 import Main from './views/Main';
 import NoPage from './views/NoPage';
 import ElevenTravel from './views/projects/ElevenTravel'
+import Strapi from './views/projects/Strapi'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
           <Route path="/projects/eleven-travel" element={<ElevenTravel />} />
+          <Route path="/projects/strapi" element={<Strapi />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

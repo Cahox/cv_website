@@ -7,28 +7,28 @@ import website_main from './../../images/eleven-travel/eleven-travel.jpg';
 import tickets from './../../images/eleven-travel/et_tickets.png';
 import login from './../../images/eleven-travel/et_login.png';
 
-function ElevenTravel() {
+function Strapi() {
   return (
-    <div id='ElevenTravel' className="project_page">
+    <div id='Strapi' className="project_page">
       <div className='top'>
         <a href='/' className='back'>
           Back
         </a>
         <div className='title'>
-          Eleven Travel
+          Strapi
         </div>
       </div>
       <div className='info'>
         <div className='left'>
           <div className='info_text'>
           <div>
-            Eleven Travel helps people all over the Netherlands get to their festival. Users can create and be the leader of their own trips.
+            Strapi is a headless content manager system (CMS). This system is used for letting people who are a bit on the rougher side on coding still be able to create new pages/content for websites (Like marketing managers, etc.).
           </div>
           <div>
-            During my time as a junior software developer, this is the project I worked on the most. The part I helped develop is the backoffice. All the settings/configutations of the of the festival events, trips, orders and everything else gets created and updated in this system.
+            I was the main and only developer working on this project. I created the content frames and some custom plugins in this system.
           </div>
           <div>
-            The application uses different technologies. The main framework used is Laravel (PHP), with many other technologies like meilisearch, whatsapp messaging integration, and mollie for payments. 
+            
           </div>
           </div>
 
@@ -52,4 +52,4 @@ function ElevenTravel() {
   );
 }
 
-export default ElevenTravel;
+export default Strapi;
