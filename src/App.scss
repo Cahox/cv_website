@@ -357,14 +357,14 @@ a {
         gap: 2.5em;
 
         .card {
+            max-width: 15vw;
+            height: 15vw;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
             color: white;
-            max-width: 15vw;
-            height: 15vw;
             box-shadow: 0 0 1em $dark;
             transition-duration: 0.5s;
             background-color: $bg-dark;
@@ -761,6 +761,119 @@ a {
                 .info_image {
                     max-width: 20vw;
                     object-fit: fill;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $small) {
+        .info {
+            flex-direction: column;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+
+            .left {
+                flex-direction: row;
+                width: 80vw;
+                height: max-content;
+                gap: 5vw;
+
+                .technology_images {
+                    flex-direction: column;
+                    justify-content: start;
+                    margin: 0;
+                    width: 20vw;
+                    gap: 1vw;
+
+                    .technology_image {
+                        max-width: 10vh;
+                        filter: drop-shadow(0 0 1.5em #000022);
+                    }
+                }
+            }
+
+            .right {
+                width: 80vw;
+
+                .image_container {
+                    .info_image {
+                        max-width: 80vw;
+                        margin: 1em 0;
+                    }
+                }
+
+                .double_image_container {
+                    .info_image {
+                        max-width: 35vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $tiny) {
+        .info {
+
+            .left {
+                .technology_images {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: $tiny) {
+    .projects {
+        .project_cards {
+            width: 80vw;
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+                max-width: 40vw;
+                width: 35vw;
+                height: 35vw;
+
+                .card_picture {
+                    width: 35vw;
+                    height: 35vw;
+                }
+
+                .pd {
+                    padding-top: 10vw;
+                    width: 25vw;
+                    height: 25vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $phone) {
+    .projects {
+        .project_cards {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .card {
+                max-width: 75vw;
+                width: 75vw;
+                height: 75vw;
+
+                .card_picture {
+                    width: 75vw;
+                    height: 75vw;
+                }
+
+                .pd {
+                    padding-top: 10vw;
+                    width: 55vw;
+                    height: 55vw;
                 }
             }
         }
