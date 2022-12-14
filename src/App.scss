@@ -367,6 +367,7 @@ a {
             height: 15vw;
             box-shadow: 0 0 1em $dark;
             transition-duration: 0.5s;
+            background-color: $bg-dark;
             cursor: pointer;
 
             .card_picture {
@@ -375,6 +376,13 @@ a {
                 object-fit: cover;
                 // filter: blur(0.15em);
                 opacity: 1;
+            }
+
+            .pd {
+                width: 10vw;
+                height: 10vw;
+                padding: 5vw;
+                padding-top: 7.5vw;
             }
 
             /* common */
@@ -403,7 +411,6 @@ a {
             transform: scale(1.1);
 
             .card_picture {
-                filter: blur(0.1em);
                 transition-duration: 0.5s;
             }
 
@@ -739,6 +746,21 @@ a {
                 .info_image {
                     max-width: 50vw;
                     margin: 1em 0;
+                }
+            }
+
+            .double_image_container {
+                max-height: 75vh;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1vw;
+
+                .info_image {
+                    max-width: 20vw;
+                    object-fit: fill;
                 }
             }
         }

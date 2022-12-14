@@ -1,11 +1,9 @@
-import laravel from './../../images/technologies/laravel.png';
-import meilisearch from './../../images/technologies/meilisearch.png';
-import whatsapp from './../../images/technologies/whatsapp.png';
-import mollie from './../../images/technologies/mollie.png';
+import digitalocean from './../../images/technologies/digitalocean.png';
+import strapitransparant from './../../images/technologies/strapitransparant.png';
 
-import website_main from './../../images/eleven-travel/eleven-travel.jpg';
-import tickets from './../../images/eleven-travel/et_tickets.png';
-import login from './../../images/eleven-travel/et_login.png';
+import plugin from './../../images/strapi/strapi-plugin.png'
+import manager from './../../images/strapi/strapi-manager.png'
+import media from './../../images/strapi/strapi-media.png'
 
 function Strapi() {
   return (
@@ -21,30 +19,28 @@ function Strapi() {
       <div className='info'>
         <div className='left'>
           <div className='info_text'>
-          <div>
-            Strapi is a headless content manager system (CMS). This system is used for letting people who are a bit on the rougher side on coding still be able to create new pages/content for websites (Like marketing managers, etc.).
-          </div>
-          <div>
-            I was the main and only developer working on this project. I created the content frames and some custom plugins in this system.
-          </div>
-          <div>
-            
-          </div>
+            <div>
+              Strapi is a headless content manager system (CMS). This system is used for letting people who are a bit on the rougher side on coding still be able to create new pages/content for websites (Like marketing managers, etc.).
+            </div>
+            <div>
+              I was the main and only developer working on this project. My main task was to setup the cms and make other employees be able to use it efficiently. I created the content frames and some custom plugins in this system.
+            </div>
+            <div>
+            This project mainly the opensource Strapi headless CMS. Digital Ocean was used for data storage and hosting.
+            </div>
           </div>
 
           <div className='technology_images'>
-          <img src={laravel} className="technology_image" alt="Laravel" />
-          <img src={meilisearch} className="technology_image" alt="Meilisearch" />
-          <img src={whatsapp} className="technology_image" alt="Whatsapp" />
-          <img src={mollie} className="technology_image" alt="Mollie" />
+            <img src={digitalocean} className="technology_image" alt="Digital Ocean" />
+            <img src={strapitransparant} className="technology_image" alt="Strapi" />
           </div>
         </div>
 
         <div className='right'>
           <div className='image_container'>
-          <img src={website_main} className="info_image" alt="project" />
-          <img src={tickets} className="info_image" alt="project" />
-          <img src={login} className="info_image" alt="project" />
+            <img src={plugin} className="info_image" alt="Plugin" />
+            <img src={manager} className="info_image" alt="Manager" />
+            <img src={media} className="info_image" alt="Media" />
           </div>
         </div>
       </div>
