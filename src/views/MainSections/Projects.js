@@ -13,7 +13,7 @@ import Roller from './../../js/roller.js'
 function Projects() {
 
   return (
-    <div id='projects' className="sub_section projects">
+    <div id='projects' className="sub_section projects noselect">
       <Roller></Roller>
       <div className='title'>
         Projects
