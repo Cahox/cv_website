@@ -14,6 +14,9 @@ import ElevenTravel from './views/projects/ElevenTravel'
 import Strapi from './views/projects/Strapi'
 import PocketDuck from './views/projects/PocketDuck'
 import Roguelike from './views/projects/Roguelike'
+//Playground
+import A from './views/playground/A/A'
+import B from './views/playground/B/B'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +28,10 @@ root.render(
           <Route path="/projects/strapi" element={<Strapi />} />
           <Route path="/projects/pocket-duck" element={<PocketDuck />} />
           <Route path="/projects/roguelike" element={<Roguelike />} />
+
+          <Route path="/playground/a" element={<A />} />
+          <Route path="/playground/b" element={<B />} />
+          
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
