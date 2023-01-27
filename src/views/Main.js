@@ -1,7 +1,7 @@
-import Head from './mainSections/Head';
-import About from './mainSections//About';
-import Projects from './mainSections/Projects';
-import Contact from './mainSections/Contact';
+import Head from './MainSections/Head';
+import About from './MainSections//About';
+import Projects from './MainSections/Projects';
+import Contact from './MainSections/Contact';
 
 function Main() {
     return (
