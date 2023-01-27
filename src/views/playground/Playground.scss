@@ -1,5 +1,5 @@
 //playground_A
-.playground_A {
+.playground_a {
     background: #868686;
     width: 100vw;
     height: 100vh;
@@ -95,5 +95,27 @@
             z-index: 5;
             filter: drop-shadow(0 0 1vw #000000);
         }
+    }
+}
+
+//Playground B
+.playground_b {
+    width: 100vw;
+
+    .object{
+        width: 15vh;
+        height: 15vh;
+        background-color: #97198d;
+        border-radius: 50%;
+    }
+
+    .first_zone{
+        height: 100vh;
+        background: #6de477;
+    }
+
+    .second_zone{
+        height: 100vh;
+        background: #3ba744;
     }
 }

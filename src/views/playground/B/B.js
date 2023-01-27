@@ -1,9 +1,23 @@
+import { useEffect } from 'react';
 import '../Playground.scss';
+import LocomotiveScroll from 'locomotive-scroll';
 
 function B() {
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+  });
+
   return (
-    <div id='B' className="project_page">
-      B
+    <div id='B' data-scroll-container className="playground_b">
+      <div data-scroll-section className='first_zone'>
+        <div id='js-target' className='object' data-scroll></div>
+      </div>
+      <div data-scroll-section className='second_zone'>
+
+      </div>
     </div>
   );
 }

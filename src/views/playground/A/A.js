@@ -20,7 +20,7 @@ function A() {
   });
 
   return (
-    <div id='A' className="playground_A">
+    <div id='A' className="playground_a">
       <div className='object_container'>
         <img src={object1} className="objects object_one" data-title="title_one" alt="object1" draggable="false" />
         <img src={object2} className="objects object_two" data-title="title_two" alt="object2" draggable="false" />
