@@ -17,6 +17,8 @@ import Roguelike from './views/projects/Roguelike'
 //Playground
 import A from './views/playground/A/A'
 import B from './views/playground/B/B'
+import C from './views/playground/C/C'
+import D from './views/playground/D/D'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,6 +33,8 @@ root.render(
 
           <Route path="/playground/a" element={<A />} />
           <Route path="/playground/b" element={<B />} />
+          <Route path="/playground/c" element={<C />} />
+          <Route path="/playground/d" element={<D />} />
           
           <Route path="*" element={<NoPage />} />
         </Route>

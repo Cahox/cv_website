@@ -17,6 +17,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
     "sass": "^1.56.1",
+    "three": "^0.151.3",
     "tsparticles": "^2.5.3",
     "tsparticles-engine": "^2.5.2",
     "web-vitals": "^2.1.4"

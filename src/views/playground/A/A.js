@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../Playground.scss';
+import './Playground_A.scss';
 import bg from "./bg.png"
 import object1 from "./Blademaster.png"
 import object2 from "./Soulslinger.png"

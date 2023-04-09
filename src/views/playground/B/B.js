@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../Playground.scss';
+import './Playground_B.scss';
 import LocomotiveScroll from 'locomotive-scroll';
 
 function B() {
